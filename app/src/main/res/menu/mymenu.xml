@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/anaFragment"
+        android:title="Home"
+        android:icon="@drawable/homepage"/>
+
+    <item android:id="@+id/profilFragment"
+        android:title="Profile"
+        android:icon="@drawable/person"/>
+
+
+</menu>

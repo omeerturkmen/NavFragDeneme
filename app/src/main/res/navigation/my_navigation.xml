@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/anaFragment">
+
+    <fragment
+        android:id="@+id/anaFragment"
+        android:name="com.oft.navfragdeneme.AnaFragment"
+        android:label="fragment_ana"
+        tools:layout="@layout/fragment_ana" >
+        <action
+            android:id="@+id/action_anaFragment_to_oyunFragment"
+            app:destination="@id/oyunFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunFragment"
+        android:name="com.oft.navfragdeneme.OyunFragment"
+        android:label="fragment_oyun"
+        tools:layout="@layout/fragment_oyun" >
+        <action
+            android:id="@+id/action_oyunFragment_to_sonucFragment"
+            app:destination="@id/sonucFragment"
+            app:popUpTo="@id/oyunFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.oft.navfragdeneme.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/sonucFragment"
+        android:name="com.oft.navfragdeneme.SonucFragment"
+        android:label="fragment_sonuc"
+        tools:layout="@layout/fragment_sonuc" >
+        <argument
+            android:name="sonucArg"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -10,6 +10,7 @@ import androidx.navigation.Navigation
 import com.oft.navfragdeneme.databinding.FragmentOyunBinding
 
 class OyunFragment : Fragment() {
+    private var denemeGit = ""
 
     private lateinit var binding: FragmentOyunBinding
     private var kalantahmin: Int = 10
